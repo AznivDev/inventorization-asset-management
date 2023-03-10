@@ -1,0 +1,25 @@
+{
+  "name": "inventorization-asset-management",
+  "version": "1.0.0",
+  "description": "Simultaneously Run the App",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "npm start --prefix api",
+    "client": "npm start --prefix client",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "install": "cd api && npm install && cd ../client && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/sourcemind/inventorization-asset-management.git"
+  },
+  "author": "TM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/sourcemind/inventorization-asset-management/issues"
+  },
+  "homepage": "https://bitbucket.org/sourcemind/inventorization-asset-management#readme",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

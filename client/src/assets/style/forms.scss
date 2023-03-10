@@ -1,0 +1,20 @@
+.form-group {
+  label {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  input,
+  select {
+    outline: none !important;
+    border-radius: 8px !important;
+
+    &::placeholder {
+      font-weight: 300 !important;
+    }
+
+    &:disabled {
+      background-color: rgba(211, 211, 211, 0.25) !important;
+    }
+  }
+}

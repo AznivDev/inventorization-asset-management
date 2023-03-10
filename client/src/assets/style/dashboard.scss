@@ -1,0 +1,96 @@
+@import "./includes/colors.scss";
+@import "./monitoring.scss";
+
+body {
+  background-image: url(/assets/images/auth-bg-rotated.png);
+  background-size: auto;
+  height: 100%;
+}
+
+.dashboard-layout {
+  main {
+    margin-left: 250px;
+    overflow-y: scroll;
+
+    @media (max-width: 768px) {
+      margin-left: 80px;
+    }
+  }
+
+  .content-container {
+    padding: 40px;
+    background: rgba(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgb(237 237 237);
+
+    @media (max-width: 768px) {
+      padding: 20px;
+    }
+  }
+
+  .sidebar {
+    width: 240px;
+
+    @media (max-width: 768px) {
+      width: 80px;
+    }
+
+    .brand {
+      .label {
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+
+    .list-group-item {
+      $border-px: 4px;
+
+      transition: 0.5s all ease;
+      font-size: 18px;
+      border-radius: 0;
+      border-left: $border-px solid transparent;
+      border-right: $border-px solid transparent;
+
+      &:hover {
+        border-left: $border-px solid whitesmoke;
+
+        .label,
+        .fa {
+          color: whitesmoke;
+        }
+      }
+
+      &.active {
+        background-color: rgba($text-darker, 0.2);
+        border-left: $border-px solid whitesmoke;
+        border-top: 0;
+        border-bottom: 0;
+
+        .label,
+        .fa {
+          color: whitesmoke;
+        }
+      }
+
+      .label {
+        width: 200px;
+        color: $text-darker;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+
+      .fa {
+        color: $text-darker;
+        width: 35px !important;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

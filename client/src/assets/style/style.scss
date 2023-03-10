@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+@import "./buttons.scss";
+@import "./includes/_bootstrap.scss";
+@import "./includes/_colors.scss";
+@import "./includes/_table.scss";
+
+body {
+  font-family: "Source Sans Pro", sans-serif !important;
+}
+
+.bg-darker {
+  background-color: $bg-darker;
+}
+.text-darker {
+  color: $text-darker;
+}
+.font-weight-bolder {
+  font-weight: 600;
+}
+.font-weight-bold {
+  font-weight: bold;
+}
+.border-right {
+  border-right: 1px solid lightgrey;
+}
+.w-lg-100 {
+  @media (max-width: 992px) {
+    width: 100% !important;
+  }
+}

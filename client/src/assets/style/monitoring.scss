@@ -1,0 +1,13 @@
+.monitoring-row {
+  .card {
+    transition: 0.5s all ease;
+
+    &:hover {
+      border-color: $orange;
+
+      * {
+        transition: 0.5s all ease;
+      }
+    }
+  }
+}

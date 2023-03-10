@@ -1,10 +1,10 @@
-# Welcome to Inventorization Asset Management Platform | INVASMAN 🚀
+# UI | Inventorization Asset Management Platform
 
-## Introduction
+### Introduction
 
-Inventoriztion Asset Management is an open source platform that enable companies to manage all their assets, users, requests and more. This is a Full Stack Application built with ReactJS, NodeJS, Express and MySQL.
+Inventoriztion Asset Management is an open source platform that enable companies to manage all their assets, users, requests and more. This is the UI for the platform.
 
-## Project Support Features
+### Project Support Features
 
 - Admin is created by default with some credentials provided in the .env file
 - Admin can create a new user account
@@ -12,24 +12,23 @@ Inventoriztion Asset Management is an open source platform that enable companies
 - Authenticated users can access all requests, assets. They can also create and delete requests.
 - Authenticated admins and moderators can access all requests, assets, users. They can also create, update and delete requests, assets and users.
 
-## Installation Guide
+### Installation Guide
 
 - Clone this repository
 - The `master` branch is the most stable branch at any given time, ensure you're working from it.
 - Run `npm install` to install all dependencies
-- Duplicate `.env.example` and rename it to `.env` for the API and Client
-- Update the `.env` file with your credentials
+- Duplicate `.env.example` and rename it to `.env`
+- Update the `.env` file with your database credentials
 - Run `npm start` to start the server
 
-## Technologies Used
+### Postman Documentation
 
-- ReactJS
-- NodeJS
-- Express
-- Sequelize
-- MySQL
-- Postman
-- JWT
+- You can find exporeted JSON Postman Documentation [here](/Asset%20Inventorization%20Platform.postman_collection.json)
+- Create new Environment for Variables:
+  - BASE_URL
+  - JWT_TOKEN
+  - AUTH_LOGIN
+  - AUTH_PWD
 
 ## License
 

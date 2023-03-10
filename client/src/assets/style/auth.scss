@@ -1,0 +1,14 @@
+#auth-layout {
+  background-image: url(/assets/images/auth-bg.png);
+  background-size: cover;
+
+  .card {
+    filter: drop-shadow(0px 4px 40px rgba(0, 0, 0, 0.05));
+
+    .card-title {
+      .title {
+        font-weight: 600;
+      }
+    }
+  }
+}
